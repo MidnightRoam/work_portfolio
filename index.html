@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="vendor/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap" rel="stylesheet">
@@ -16,10 +16,10 @@
         <a href="index.html" class="logo">Us.</a>
         <ul class="navbar">
             <li class="nav__li"><a class="link" href="#info">About Me</a></li>
-            <li class="nav__li"><a class="link" href="#">Education</a></li>
+            <li class="nav__li"><a class="link" href="#education">Education</a></li>
             <li class="nav__li"><a class="link" href="#skills">Skill</a></li>
-            <li class="nav__li"><a class="link" href="#">Portfolio</a></li>
-            <li class="nav__li"><a class="link" href="#">Contact</a></li>
+            <li class="nav__li"><a class="link" href="#portfolio">Portfolio</a></li>
+            <li class="nav__li"><a class="link" href="#contact">Contact</a></li>
         </ul>
     </header>
 
@@ -106,10 +106,10 @@
                         <div class="skills mysql">50%</div>
                     </div>
                 </div>
-                <a href="SaldatsenkaUladzislauWebDevCV_en.pdf" class="btn btn-primary" download="UladzislauSaldatsenkaDevCV">Download Resume</a>
+                <a href="vendor/SaldatsenkaUladzislauWebDevCV_en.pdf" class="btn btn-primary" download="UladzislauSaldatsenkaDevCV">Download Resume</a>
             </div>
         </div>
-        <div class="resume">
+        <div class="resume" id='education'>
             <div class="resume__title">
                 <p class="title">Resume</p>
                 <p class="resume__symbol">/</p>
@@ -169,10 +169,63 @@
                 </div>
             </div>
         </div>
+        <div class="projects" id="portfolio">
+            <div class="projects__title">
+                <p class="title">My projects</p>
+                <p class="resume__symbol">/</p>
+                <p class="text__secondary">Main projects</p>
+            </div>
+            <div class="projects__examples">
+                <a href="https://midnightroam.pythonanywhere.com/" class="projects__link" id="coffee-house">
+                    <img src="vendor/images/projects/coffee-house-app.png" alt="" class="project__image">
+                </a>
+                <a href="https://github.com/MidnightRoam/chat_application" class="projects__link" id="chat-app">
+                    <img src="https://midnightroam.github.io/portfolio_site/images/django-js-chat.PNG" alt="" class="project__image">
+                </a>
+                <a href="https://github.com/MidnightRoam/weather_app" class="projects__link">
+                    <img src="vendor/images/projects/weather-app.png" alt="" class="project__image" id="weather-app">
+                </a>
+            </div>
+        </div>
     </div>
-
+    <div class="contact" id="contact">
+        <div class="projects__title">
+            <p class="title">Get In Touch</p>
+            <p class="resume__symbol">/</p>
+            <p class="text__secondary">Contact with me</p>
+        </div>
+        <p class="contact__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dicta et ratione eos in repellendus.</p>
+        <div class="contact__info">
+            <div class="contacts">
+                <p class="contact__phone">
+                    <img class="icon" src="vendor/images/telephone-icon.png" alt="phone">
+                    +361629293930
+                </p>
+                <p class="contact__email">
+                    <img src="vendor/images/email-icon.png" alt="email" class="icon">
+                    midnightroam1@gmail.com
+                </p>
+                <p class="location__text">
+                    <img src="vendor/images/location-point-icon.png" alt="location-address" class="icon">
+                    Serbia, Novi Sad, 21101
+                </p>
+                <div class="contact__socials">
+                    <a href="#" class="fa fa-github"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="location__info">
+                <iframe class="location__map" 
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A04da7e6eed87a7fb0e95b517dd6461dbc8cd5a5b90d944f2c217ec463481c4be&amp;source=constructor" 
+                width="500" height="400" frameborder="0">
+                </iframe>
+            </div>
+        </div>
+    </div>
     <footer>
-
+        <p class="footer__text">Copyright 2022 © Uladzislau Saldatsenka</p>
     </footer>
+    <script src="vendor/js/script.js"></script>
 </body>
 </html>

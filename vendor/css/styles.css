@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-size: 16px;
     margin: 0;
@@ -14,6 +18,9 @@ header {
     align-items: center;
     background-color: rgb(125, 125, 224);
     height: 100px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
 }
 
 .logo {
@@ -60,7 +67,7 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 450px;
+    height: 550px;
     width: 100%;
     background-color: rgb(125, 125, 224);
     color: #fff;
@@ -69,7 +76,7 @@ header {
 .main__info {
     position: absolute;
     left: 20%;
-    top: 25%;
+    top: 35%;
 }
 
 .title {
@@ -226,7 +233,7 @@ header {
 .resume {
     width: 100%;
     height: auto;
-    padding: 50px 0px 100px 0px;
+    padding: 5% 10% 5% 20%;
     background-color: #f9f9fb;
     display: flex;
     flex-direction: column;
@@ -234,7 +241,6 @@ header {
 
 .resume__title {
     align-self: start;
-    padding-left: 10.4%;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -256,7 +262,6 @@ header {
 .resume__text {
     max-width: 40%;
     color: #757577;
-    padding-left: 10.4%;
 }
 
 .resume__education {
@@ -330,6 +335,124 @@ header {
     color:#2196F3;
 }
 
+.projects {
+    height: auto;
+    width: 100%;
+    padding: 5% 10% 5% 12%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__title {
+    align-self: start;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.projects__examples {
+    display: flex;
+    width: 100%;
+    padding-top: 5%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project__image {
+    width: 500px;
+    height: 280px;
+    transition: 0.5s;
+    margin-bottom: 7%;
+    -webkit-box-shadow: 10px 10px 31px -6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 10px 10px 31px -6px rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 31px -6px rgba(0,0,0,0.2);
+}
+
+.project__image:hover {
+    margin-bottom: 18%;
+    margin-top: 10%;
+    transform: scale(1.2);
+}
+
+.contact {
+    background-color: #f9f9fb;
+    height: auto;
+    width: 100%;
+    padding: 5% 10% 5% 12%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__text {
+    padding: 0% 0% 5% 10%;
+    color: #757577;
+}
+
+.contact__info {
+    padding: 0% 10% 5% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__phone {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.contact__email {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.location__text {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.location__map {
+    width: 500px;
+    height: 400px;
+    transition: 0.5s;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+
+.contact__socials {
+    display: flex;
+    flex-direction: column;
+}   
+
+footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(125, 125, 224);
+    border-top: 1px solid #c7c7c7;
+}
+
+.footer__text {
+    font-weight: 300;
+    font-size: 1.3em;
+    color: #fff;
+}
 /* Style all font awesome icons */
 .fa {
     margin: 5px;
