@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Hi! I'm Uladzislau S.</title>
     <link rel="stylesheet" href="vendor/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="vendor/images/favicon.png">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">Us.</a>
-        <ul class="navbar">
+    <header class="navbar__wrap">
+        <a href="#top" class="logo">Us.</a>
+            <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+        <ul class="navbar" id="navbar">
             <li class="nav__li"><a class="link" href="#info">About Me</a></li>
             <li class="nav__li"><a class="link" href="#education">Education</a></li>
             <li class="nav__li"><a class="link" href="#skills">Skill</a></li>
@@ -22,8 +31,11 @@
             <li class="nav__li"><a class="link" href="#contact">Contact</a></li>
         </ul>
     </header>
+    <div class="popup" id="popup">
+            
+    </div>
 
-    <div class="container">
+    <div class="container" id="top">
         <div class="greetings">
             <div class="main__info">
                 <p class="title">I'm Uladzislau Saldatsenka</p>
@@ -33,7 +45,7 @@
         <div class="personal__info" id="info">
             <div class="bio__card shadow">
                 <div class="bio__img">
-                    <img src="https://sun9-east.userapi.com/sun9-28/s/v1/ig1/sbB7JthISCxBhCn4jkf-t5RmNUP2fhp7vLMycBS9f42EQg6X9PVGovu-jeO5108EVip9iBt-.jpg?size=1620x2160&quality=96&type=album" alt="personal-image" class="bio__image">
+                    <img src="vendor/images/dev-photo.jpg" alt="personal-image" class="bio__image">
                 </div>
                 <div class="bio__info">
                     <div class="info__left">
@@ -72,9 +84,9 @@
                     </div>
                 </div>
                 <ul class="social__links">
-                    <li><a href="#" class="fa fa-github"></a></li>
-                    <li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                    <li><a href="https://github.com/MidnightRoam" class="fa fa-github"></a></li>
+                    <li><a href="https://www.facebook.com/NightRoam" class="fa fa-facebook"></a></li>
+                    <li><a href="https://www.linkedin.com/in/uladzislau-saldatsenka-835932250/" class="fa fa-linkedin"></a></li>
                 </ul>
             </div>
             <div class="second__card">
@@ -120,21 +132,21 @@
                 <div class="resume__degree">
                     <p class="degree__title">Education</p>
                     <div class="education__block">
-                        <img src="https://img.icons8.com/nolan/512/open-book.png" alt="" class="degree__image">
+                        <img src="vendor/images/book-icon.png" alt="book-icon" class="degree__image">
                         <div class="degree">
                             <p class="degree__year">2015 - 2018</p>
                             <p class="degree__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi et, reiciendis commodi ad cum porro?</p>
                         </div>
                     </div>
                     <div class="education__block">
-                        <img src="https://img.icons8.com/nolan/512/student-female.png" alt="" class="degree__image">
+                        <img src="vendor/images/student-female-book.png" alt="student-icon" class="degree__image">
                         <div class="degree">
                             <p class="degree__year">2018 - 2022</p>
                             <p class="degree__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi et, reiciendis commodi ad cum porro?</p>
                         </div>
                     </div>
                     <div class="education__block">
-                        <img src="https://img.icons8.com/nolan/512/personal-growth.png" alt="" class="degree__image">
+                        <img src="vendor/images/personal-growth-icon.png" alt="personal-growth-icon" class="degree__image">
                         <div class="degree">
                             <p class="degree__year">2022 - Now</p>
                             <p class="degree__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi et, reiciendis commodi ad cum porro?</p>
@@ -144,7 +156,7 @@
                 <div class="resume__certifications">
                     <p class="certifications__title">Certifications</p>
                     <div class="certifications__block">
-                        <img src="https://img.icons8.com/nolan/512/diploma.png" alt="" class="certifications__image">
+                        <img src="vendor/images/diploma-icon.png" alt="diploma-icon" class="certifications__image">
                         <div class="certifications">
                             <p class="degree__year">2022</p>
                             <a href="https://stepik.org/cert/1494513" class="certification__link">VK Team | Web-technologies</a>
@@ -158,7 +170,7 @@
                         </div>
                     </div>
                     <div class="certifications__block">
-                        <img src="https://img.icons8.com/nolan/512/1A6DFF/C822FF/learning.png" alt="" class="certifications__image">
+                        <img src="vendor/images/learning-icon.png" alt="learning-icon" class="certifications__image">
                         <div class="certifications">
                             <p class="degree__year">2021</p>
                             <a href="https://stepik.org/cert/980770" class="certification__link">"Generation Python": a course for beginners</a>
@@ -177,13 +189,13 @@
             </div>
             <div class="projects__examples">
                 <a href="https://midnightroam.pythonanywhere.com/" class="projects__link" id="coffee-house">
-                    <img src="vendor/images/projects/coffee-house-app.png" alt="" class="project__image">
+                    <img src="vendor/images/projects/coffee-house-app.png" alt="coffee-house-project" class="project__image">
                 </a>
                 <a href="https://github.com/MidnightRoam/chat_application" class="projects__link" id="chat-app">
-                    <img src="https://midnightroam.github.io/portfolio_site/images/django-js-chat.PNG" alt="" class="project__image">
+                    <img src="vendor/images/projects/django-js-chat.png" alt="chat-project" class="project__image">
                 </a>
                 <a href="https://github.com/MidnightRoam/weather_app" class="projects__link">
-                    <img src="vendor/images/projects/weather-app.png" alt="" class="project__image" id="weather-app">
+                    <img src="vendor/images/projects/weather-app.png" alt="weather-app-project" class="project__image" id="weather-app">
                 </a>
             </div>
         </div>
@@ -199,7 +211,7 @@
             <div class="contacts">
                 <p class="contact__phone">
                     <img class="icon" src="vendor/images/telephone-icon.png" alt="phone">
-                    +361629293930
+                    +381629293930
                 </p>
                 <p class="contact__email">
                     <img src="vendor/images/email-icon.png" alt="email" class="icon">
@@ -210,9 +222,9 @@
                     Serbia, Novi Sad, 21101
                 </p>
                 <div class="contact__socials">
-                    <a href="#" class="fa fa-github"></a>
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/MidnightRoam" class="fa fa-github"></a>
+                    <a href="https://www.facebook.com/NightRoam" class="fa fa-facebook"></a>
+                    <a href="https://www.linkedin.com/in/uladzislau-saldatsenka-835932250/" class="fa fa-linkedin"></a>
                 </div>
             </div>
             <div class="location__info">
