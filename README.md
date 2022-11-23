@@ -1,2 +1,2 @@
 # Professional portfolio
-My current work <h3><a href="https://midnightroam.github.io/work_portfolio/">portfolio</a></h3>
+My current work <b><a href="https://midnightroam.github.io/work_portfolio/">portfolio</a></b>
