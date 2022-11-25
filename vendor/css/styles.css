@@ -150,7 +150,7 @@ header {
 }
 
 .link:hover {
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
 .container {
@@ -751,8 +751,6 @@ header {
     display: flex;
     flex-direction: column;
 }
-
-
 
 .projects__title {
     align-self: start;
