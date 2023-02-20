@@ -837,6 +837,10 @@ header {
     text-decoration: none;
 }
 
+.django__stripe {
+    background-image: url('../images/projects/django-stripe-payment.JPG');
+}
+
 .coffee__house {
     background-image: url('../images/projects/coffee-house-app.png');
 }
