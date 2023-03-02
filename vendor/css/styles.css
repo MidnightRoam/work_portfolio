@@ -251,7 +251,7 @@ header {
     margin: auto;
     margin-right: 0px;
     width: 350px;
-    height: 700px;
+    height: 750px;
 }
 /* 1280px width adaptive */
 @media (max-width: 1280px) {
@@ -365,7 +365,6 @@ header {
 @media (max-width: 1114px) {
     .second__card {
         width: 450px;
-        height: 660px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
