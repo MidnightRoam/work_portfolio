@@ -1019,6 +1019,15 @@ header {
     margin: 10px;
 }
 
+.location__info {
+    background-color: rgb(125, 125, 224);
+    width: 51%;
+    display: flex;
+    justify-content: center;
+    transition: 0.2s;
+    
+}
+
 .location__text {
     font-size: 1.2em;
     font-weight: 300;
